@@ -1,0 +1,12 @@
+package enumconv
+
+import (
+	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
+	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
+)
+
+var AggregateFunctionNameMap map[ApiCommon.TimeRange_AggregateFunction]DBCommon.AggregateFunction = map[ApiCommon.TimeRange_AggregateFunction]DBCommon.AggregateFunction{
+	ApiCommon.TimeRange_NONE: DBCommon.None,
+	ApiCommon.TimeRange_MAX:  DBCommon.MaxOverTime,
+	ApiCommon.TimeRange_AVG:  DBCommon.AvgOverTime,
+}

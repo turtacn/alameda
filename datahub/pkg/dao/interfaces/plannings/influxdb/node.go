@@ -1,0 +1,25 @@
+package influxdb
+
+import (
+	RepoInfluxPlanning "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/plannings"
+	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
+	ApiPlannings "github.com/turtacn/api/alameda_api/v1alpha1/datahub/plannings"
+)
+
+type NodePlannings struct {
+	InfluxDBConfig InternalInflux.Config
+}
+
+func NewNodePlanningsWithConfig(config InternalInflux.Config) *NodePlannings {
+	return &NodePlannings{InfluxDBConfig: config}
+}
+
+func (c *NodePlannings) CreatePlannings(in *ApiPlannings.CreateNodePlanningsRequest) error {
+	repository := RepoInfluxPlanning.NewNodeRepository(&c.InfluxDBConfig)
+	return repository.CreatePlannings(in)
+}
+
+func (c *NodePlannings) ListPlannings(in *ApiPlannings.ListNodePlanningsRequest) ([]*ApiPlannings.NodePlanning, error) {
+	repository := RepoInfluxPlanning.NewNodeRepository(&c.InfluxDBConfig)
+	return repository.ListPlannings(in)
+}
