@@ -1,0 +1,30 @@
+[namespace_exclusion]
+namespaces = ["kube-public", "kube-service-catalog",
+  "kube-system", "management-infra", "openshift",
+  "kube-node-lease", "stackpoint-system", "marketplace"
+]
+namespace_regs = ["openshift-*"]
+
+[log]
+setLogcallers = true
+outputLevel = "info" # debug, info, warn, error, fatal, none
+filePath = "/var/log/alameda/alameda-operator.log"
+
+[datahub]
+address = "datahub.alameda.svc.cluster.local:50050"
+  [datahub.retryInterval]
+  default = 3 # second
+
+[k8sWebhookServer]
+port = 50443
+validatingWebhookConfigName = "operator-k8s-admission-validation"
+certDir = "/tmp/k8s-webhook-server/cert/"
+
+  [k8sWebhookServer.admissionPaths]
+  validateDeployment = "/validate-autoscaling-containers-ai-v1-deployment"
+  validateDeploymentConfig = "/validate-autoscaling-containers-ai-v1-deploymentconfig"
+  
+  [k8sWebhookServer.service]
+  name = "alameda-operator-webhook-service"
+  port = 443
+  

@@ -1,0 +1,8 @@
+namespace: alameda
+
+resources:
+- ../rbac/cluster_role.yaml
+- ../rbac/cluster_role_binding.yaml
+- ../manager/manager.yaml
+- ../crds/autoscaling_v1alpha1_alamedaresource.yaml
+- ../crds/autoscaling_v1alpha1_alamedaresourceprediction.yaml

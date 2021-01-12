@@ -4,8 +4,8 @@ import (
 	DaoGpu "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/gpu/influxdb"
 	FormatEnum "github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
 	FormatTypes "github.com/turtacn/alameda/datahub/pkg/formatconversion/types"
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	ApiGpu "github.com/turtacn/api/alameda_api/v1alpha1/datahub/gpu"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	ApiGpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
 	"github.com/golang/protobuf/ptypes"
 )
 

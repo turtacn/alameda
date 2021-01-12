@@ -3,7 +3,7 @@ package v1alpha1
 import (
 	DaoWeaveScope "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/weavescope"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiWeavescope "github.com/turtacn/api/alameda_api/v1alpha1/datahub/weavescope"
+	ApiWeavescope "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/weavescope"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

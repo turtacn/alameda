@@ -6,7 +6,7 @@ import (
 	DaoMetricTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/metrics/types"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	"github.com/turtacn/alameda/pkg/utils/log"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/pkg/errors"
 )
 

@@ -2,7 +2,7 @@ package v1alpha1
 
 import (
 	EventMgt "github.com/turtacn/alameda/internal/pkg/event-mgt"
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

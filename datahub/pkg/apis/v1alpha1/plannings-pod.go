@@ -3,7 +3,7 @@ package v1alpha1
 import (
 	DaoPlanning "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/plannings"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiPlannings "github.com/turtacn/api/alameda_api/v1alpha1/datahub/plannings"
+	ApiPlannings "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/plannings"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

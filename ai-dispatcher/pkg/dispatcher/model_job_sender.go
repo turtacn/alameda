@@ -3,8 +3,8 @@ package dispatcher
 import (
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
-	datahub_gpu "github.com/turtacn/api/alameda_api/v1alpha1/datahub/gpu"
-	datahub_resources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	datahub_gpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"google.golang.org/grpc"
 )
 

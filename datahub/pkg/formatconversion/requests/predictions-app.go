@@ -4,7 +4,7 @@ import (
 	DaoPredictionTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/predictions/types"
 	FormatTypes "github.com/turtacn/alameda/datahub/pkg/formatconversion/types"
 	Metadata "github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"github.com/golang/protobuf/ptypes"
 )
 

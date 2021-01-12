@@ -3,7 +3,7 @@ package influxdb
 import (
 	"fmt"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
-	Common "github.com/turtacn/api/common"
+	Common "github.com/containers-ai/api/common"
 	"strings"
 	"time"
 )

@@ -3,8 +3,8 @@ package responses
 import (
 	"github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
 	FormatTypes "github.com/turtacn/alameda/datahub/pkg/formatconversion/types"
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"github.com/golang/protobuf/ptypes"
 )
 

@@ -1,0 +1,81 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: alameda
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: operator
+  namespace: alameda
+  labels:
+    app: operator
+spec:
+  selector:
+    app: operator
+  ports:
+  - port: 50050
+    name: grpc
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: operator
+  namespace: alameda
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: operator
+  namespace: alameda
+  labels:
+    app: operator
+spec:
+  selector:
+    matchLabels:
+      app: operator
+  template:
+    metadata:
+      labels:
+        app: operator
+    spec:
+      serviceAccountName: operator
+      containers:
+      - command:
+        - /root/manager
+        # TODO: Use docker image from https://hub.docker.com/r/containersai/alameda/
+        image: 
+        name: operator
+        resources:
+          limits:
+            cpu: 100m
+            memory: 30Mi
+          requests:
+            cpu: 100m
+            memory: 20Mi
+        env:
+        - name: NAMESPACE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace   
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        readinessProbe:
+          exec:
+            command:
+            - /usr/local/bin/manager
+            - --readiness-probe
+          initialDelaySeconds: 5
+          failureThreshold: 20
+          periodSeconds: 5
+        livenessProbe:
+          exec:
+            command:
+            - /usr/local/bin/manager
+            - --liveness-probe
+          initialDelaySeconds: 5
+          failureThreshold: 20
+          periodSeconds: 5
+ 

@@ -5,7 +5,7 @@ import (
 	FormatRequest "github.com/turtacn/alameda/datahub/pkg/formatconversion/requests"
 	FormatResponse "github.com/turtacn/alameda/datahub/pkg/formatconversion/responses"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiMetrics "github.com/turtacn/api/alameda_api/v1alpha1/datahub/metrics"
+	ApiMetrics "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/metrics"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	datahub_v1alpha1 "github.com/turtacn/api/alameda_api/v1alpha1/datahub"
-	datahub_resources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	datahub_v1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/streadway/amqp"
 	"google.golang.org/grpc"
 )

@@ -5,7 +5,7 @@ import (
 	RepoInfluxPrediction "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/predictions"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	Log "github.com/turtacn/alameda/pkg/utils/log"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 var (

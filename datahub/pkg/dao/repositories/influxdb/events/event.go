@@ -6,7 +6,7 @@ import (
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	Log "github.com/turtacn/alameda/pkg/utils/log"
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 	"github.com/golang/protobuf/ptypes"
 	InfluxClient "github.com/influxdata/influxdb/client/v2"
 	"time"

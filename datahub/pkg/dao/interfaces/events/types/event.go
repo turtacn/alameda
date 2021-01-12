@@ -1,7 +1,7 @@
 package types
 
 import (
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 )
 
 type EventDAO interface {

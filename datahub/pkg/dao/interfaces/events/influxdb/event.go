@@ -6,7 +6,7 @@ import (
 	RepoInfluxEvent "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/events"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	InternalRabbitMQ "github.com/turtacn/alameda/internal/pkg/message-queue/rabbitmq"
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 )
 
 type Event struct {

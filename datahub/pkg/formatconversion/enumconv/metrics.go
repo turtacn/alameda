@@ -1,7 +1,7 @@
 package enumconv
 
 import (
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
 )
 
 // Metric Type/Kind alias

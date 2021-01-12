@@ -2,7 +2,7 @@ package weavescope
 
 import (
 	"fmt"
-	ApiWeavescope "github.com/turtacn/api/alameda_api/v1alpha1/datahub/weavescope"
+	ApiWeavescope "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/weavescope"
 	"io/ioutil"
 	"net/http"
 )

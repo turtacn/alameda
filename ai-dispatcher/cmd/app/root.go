@@ -14,8 +14,8 @@ import (
 
 	alameda_app "github.com/turtacn/alameda/cmd/app"
 	"github.com/turtacn/alameda/pkg/utils/log"
-	datahubv1alpha1 "github.com/turtacn/api/alameda_api/v1alpha1/datahub"
-	datahub_resources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	datahubv1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	grpc_retry "github.com/grpc-ecosystem/go-grpc-middleware/retry"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

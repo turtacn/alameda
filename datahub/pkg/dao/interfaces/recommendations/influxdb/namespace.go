@@ -4,7 +4,7 @@ import (
 	//DaoRecommendationTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/recommendations/types"
 	RepoInfluxRecommendation "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/recommendations"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	ApiRecommendations "github.com/turtacn/api/alameda_api/v1alpha1/datahub/recommendations"
+	ApiRecommendations "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/recommendations"
 )
 
 type NamespaceRecommendations struct {

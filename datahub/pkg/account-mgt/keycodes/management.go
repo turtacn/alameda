@@ -6,7 +6,7 @@ import (
 	EntityInflux "github.com/turtacn/alameda/internal/pkg/database/entity/influxdb"
 	EntityInfluxKeycode "github.com/turtacn/alameda/internal/pkg/database/entity/influxdb/cluster_status"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 	InfluxClient "github.com/influxdata/influxdb/client/v2"
 	"math"
 	"strings"

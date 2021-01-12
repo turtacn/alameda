@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 // DAO DAO interface of prediction

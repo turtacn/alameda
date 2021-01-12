@@ -2,7 +2,7 @@ package requests
 
 import (
 	"github.com/turtacn/alameda/datahub/pkg/dao/interfaces/clusterstatus/types"
-	"github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	"github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 )
 
 func NewContainerStatus(containerStatus *resources.ContainerStatus) *types.ContainerStatus {

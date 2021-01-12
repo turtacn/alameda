@@ -3,9 +3,9 @@ package responses
 import (
 	DaoMetricTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/metrics/types"
 	FormatEnum "github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	ApiMetrics "github.com/turtacn/api/alameda_api/v1alpha1/datahub/metrics"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	ApiMetrics "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/metrics"
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 )
 
 type PodMetricExtended struct {

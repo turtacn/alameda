@@ -3,7 +3,7 @@ package metrics
 import (
 	"fmt"
 	Keycodes "github.com/turtacn/alameda/datahub/pkg/account-mgt/keycodes"
-	ApiEvents "github.com/turtacn/api/alameda_api/v1alpha1/datahub/events"
+	ApiEvents "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/events"
 	"math"
 	"strconv"
 	"strings"

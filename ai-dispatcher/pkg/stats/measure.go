@@ -9,8 +9,8 @@ import (
 	stats_errors "github.com/turtacn/alameda/ai-dispatcher/pkg/stats/errors"
 	"github.com/turtacn/alameda/pkg/utils"
 	"github.com/turtacn/alameda/pkg/utils/log"
-	datahub_common "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	datahub_predictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	datahub_predictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"github.com/spf13/viper"
 )
 

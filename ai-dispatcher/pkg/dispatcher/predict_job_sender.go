@@ -5,9 +5,9 @@ import (
 
 	"github.com/turtacn/alameda/ai-dispatcher/consts"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
-	datahub_common "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	datahub_gpu "github.com/turtacn/api/alameda_api/v1alpha1/datahub/gpu"
-	datahub_resources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	datahub_gpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/golang/protobuf/jsonpb"
 	"google.golang.org/grpc"
 )

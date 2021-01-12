@@ -3,7 +3,7 @@ package requests
 import (
 	DaoClusterTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/clusterstatus/types"
 	Metadata "github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 )
 
 type CreateNamespacesRequestExtended struct {

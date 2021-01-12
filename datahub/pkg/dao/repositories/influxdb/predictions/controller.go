@@ -10,7 +10,7 @@ import (
 	DatahubUtils "github.com/turtacn/alameda/datahub/pkg/utils"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	InternalInfluxModels "github.com/turtacn/alameda/internal/pkg/database/influxdb/models"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	InfluxClient "github.com/influxdata/influxdb/client/v2"
 	"github.com/pkg/errors"
 	"strconv"

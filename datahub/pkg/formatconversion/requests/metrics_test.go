@@ -7,7 +7,7 @@ import (
 	"github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/stretchr/testify/assert"
 
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
 )
 
 func TestNormalizeListMetricsRequestTimeRange(t *testing.T) {

@@ -3,7 +3,7 @@ package requests
 import (
 	DaoScoreTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/scores/types"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
-	ApiScores "github.com/turtacn/api/alameda_api/v1alpha1/datahub/scores"
+	ApiScores "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/scores"
 )
 
 type ListSimulatedSchedulingScoresRequestExtended struct {

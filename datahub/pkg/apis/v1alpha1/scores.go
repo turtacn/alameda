@@ -5,7 +5,7 @@ import (
 	DaoScoreTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/scores/types"
 	RequestExtend "github.com/turtacn/alameda/datahub/pkg/formatconversion/requests"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiScores "github.com/turtacn/api/alameda_api/v1alpha1/datahub/scores"
+	ApiScores "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/scores"
 	"github.com/golang/protobuf/ptypes"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"

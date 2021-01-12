@@ -5,7 +5,7 @@ import (
 	RepoInfluxPrediction "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/predictions"
 	FormatEnum "github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 type PodPredictions struct {

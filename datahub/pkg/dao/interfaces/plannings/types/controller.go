@@ -1,7 +1,7 @@
 package types
 
 import (
-	ApiPlannings "github.com/turtacn/api/alameda_api/v1alpha1/datahub/plannings"
+	ApiPlannings "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/plannings"
 )
 
 // ContainerOperation defines container measurement operation of recommendation database

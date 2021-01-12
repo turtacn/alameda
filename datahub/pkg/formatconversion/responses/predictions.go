@@ -3,7 +3,7 @@ package responses
 import (
 	DaoPredictionTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/predictions/types"
 	FormatEnum "github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
-	ApiPredictions "github.com/turtacn/api/alameda_api/v1alpha1/datahub/predictions"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 type NodePredictionExtended struct {

@@ -1,0 +1,9 @@
+apiVersion: autoscaling.containers.ai/v1alpha1
+kind: AlamedaScaler
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: alamedascaler-sample
+spec:
+  # Add fields here
+  foo: bar

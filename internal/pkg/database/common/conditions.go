@@ -1,8 +1,8 @@
 package common
 
 import (
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	Common "github.com/turtacn/api/common"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	Common "github.com/containers-ai/api/common"
 	"github.com/golang/protobuf/ptypes"
 	"time"
 )

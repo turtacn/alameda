@@ -14,9 +14,9 @@ import (
 	DatahubUtils "github.com/turtacn/alameda/datahub/pkg/utils"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	ApiCommon "github.com/turtacn/api/alameda_api/v1alpha1/datahub/common"
-	ApiPlannings "github.com/turtacn/api/alameda_api/v1alpha1/datahub/plannings"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	ApiPlannings "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/plannings"
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 )
 
 type NodeRepository struct {

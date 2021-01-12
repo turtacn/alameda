@@ -5,7 +5,7 @@ import (
 	AutoScalingV1alpha1 "github.com/turtacn/alameda/operator/api/v1alpha1"
 	ReconcilerAlamedaRecommendation "github.com/turtacn/alameda/operator/pkg/reconciler/alamedarecommendation"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiRecommendations "github.com/turtacn/api/alameda_api/v1alpha1/datahub/recommendations"
+	ApiRecommendations "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/recommendations"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"
