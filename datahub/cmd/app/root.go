@@ -2,14 +2,14 @@ package app
 
 import (
 	"errors"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 	"github.com/turtacn/alameda/cmd/app"
 	Keycodes "github.com/turtacn/alameda/datahub/pkg/account-mgt/keycodes"
 	DatahubConfig "github.com/turtacn/alameda/datahub/pkg/config"
 	Notifier "github.com/turtacn/alameda/datahub/pkg/notifier"
 	EventMgt "github.com/turtacn/alameda/internal/pkg/event-mgt"
 	"github.com/turtacn/alameda/pkg/utils/log"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"strings"
 )
 

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/pkg/errors"
 	EntityPromthMetric "github.com/turtacn/alameda/datahub/pkg/dao/entities/prometheus/metrics"
 	FormatTypes "github.com/turtacn/alameda/datahub/pkg/formatconversion/types"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalPromth "github.com/turtacn/alameda/internal/pkg/database/prometheus"
-	"github.com/pkg/errors"
 	"time"
 )
 

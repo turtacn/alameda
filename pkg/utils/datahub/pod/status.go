@@ -1,11 +1,11 @@
 package pod
 
 import (
+	ApiResources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	AlamedaUtils "github.com/turtacn/alameda/operator/pkg/utils/resources"
 	AlamedaConsts "github.com/turtacn/alameda/pkg/consts"
 	AlamedaEnum "github.com/turtacn/alameda/pkg/utils/datahub/enumconv"
 	AlamedaLog "github.com/turtacn/alameda/pkg/utils/log"
-	ApiResources "github.com/turtacn/api/alameda_api/v1alpha1/datahub/resources"
 	CoreV1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

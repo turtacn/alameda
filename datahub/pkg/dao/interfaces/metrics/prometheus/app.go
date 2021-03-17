@@ -3,6 +3,7 @@ package prometheus
 import (
 	"context"
 
+	"github.com/pkg/errors"
 	EntityPromthMetric "github.com/turtacn/alameda/datahub/pkg/dao/entities/prometheus/metrics"
 	DaoClusterStatusTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/clusterstatus/types"
 	DaoMetricTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/metrics/types"
@@ -11,7 +12,6 @@ import (
 	Utils "github.com/turtacn/alameda/datahub/pkg/utils"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalPromth "github.com/turtacn/alameda/internal/pkg/database/prometheus"
-	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
 )
 

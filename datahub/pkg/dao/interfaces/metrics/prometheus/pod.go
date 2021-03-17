@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"golang.org/x/sync/errgroup"
 
+	"github.com/pkg/errors"
 	DaoClusterStatusTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/clusterstatus/types"
 	DaoMetricTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/metrics/types"
 	RepoPromthMetric "github.com/turtacn/alameda/datahub/pkg/dao/repositories/prometheus/metrics"
@@ -13,7 +14,6 @@ import (
 	Utils "github.com/turtacn/alameda/datahub/pkg/utils"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalPromth "github.com/turtacn/alameda/internal/pkg/database/prometheus"
-	"github.com/pkg/errors"
 )
 
 type PodMetrics struct {

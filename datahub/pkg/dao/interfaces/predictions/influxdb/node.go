@@ -1,11 +1,11 @@
 package influxdb
 
 import (
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	DaoPredictionTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/predictions/types"
 	RepoInfluxPrediction "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/predictions"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	Log "github.com/turtacn/alameda/pkg/utils/log"
-	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 var (

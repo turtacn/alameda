@@ -3,12 +3,12 @@ package dispatcher
 import (
 	"fmt"
 
-	"github.com/turtacn/alameda/ai-dispatcher/consts"
-	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
 	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
 	datahub_gpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
 	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/golang/protobuf/jsonpb"
+	"github.com/turtacn/alameda/ai-dispatcher/consts"
+	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
 	"google.golang.org/grpc"
 )
 

@@ -1,6 +1,5 @@
 package consts
 
-
 // kubernetes
 const (
 	UnitTypeNode        = "NODE"
@@ -14,7 +13,7 @@ const (
 
 // jdcloud
 const (
-	UnitTypeVM      =  "VM"
-	UnitTypeNC      =  "NC"
-	UnitTypeDK      =  "DOCKER"
+	UnitTypeVM = "VM"
+	UnitTypeNC = "NC"
+	UnitTypeDK = "DOCKER"
 )

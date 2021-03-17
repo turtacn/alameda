@@ -2,9 +2,9 @@ package types
 
 import (
 	"fmt"
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
-	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 )
 
 // DAO DAO interface of prediction

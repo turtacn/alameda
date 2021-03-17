@@ -1,9 +1,9 @@
 package v1alpha1
 
 import (
+	ApiRecommendations "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/recommendations"
 	DaoRecommendation "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/recommendations"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiRecommendations "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/recommendations"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

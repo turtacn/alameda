@@ -1,6 +1,8 @@
 package predictions
 
 import (
+	InfluxClient "github.com/influxdata/influxdb/client/v2"
+	"github.com/pkg/errors"
 	EntityInfluxPrediction "github.com/turtacn/alameda/datahub/pkg/dao/entities/influxdb/predictions"
 	DaoPredictionTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/predictions/types"
 	RepoInflux "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb"
@@ -9,8 +11,6 @@ import (
 	DatahubUtils "github.com/turtacn/alameda/datahub/pkg/utils"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
 	InternalInfluxModels "github.com/turtacn/alameda/internal/pkg/database/influxdb/models"
-	InfluxClient "github.com/influxdata/influxdb/client/v2"
-	"github.com/pkg/errors"
 	"strconv"
 )
 

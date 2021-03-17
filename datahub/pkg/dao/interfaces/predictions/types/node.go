@@ -1,11 +1,11 @@
 package types
 
 import (
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"github.com/turtacn/alameda/datahub/pkg/formatconversion/enumconv"
 	"github.com/turtacn/alameda/datahub/pkg/formatconversion/types"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	"github.com/turtacn/alameda/internal/pkg/database/common"
-	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"strings"
 )
 

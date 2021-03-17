@@ -1,9 +1,9 @@
 package clusterstatus
 
 import (
+	InfluxClient "github.com/influxdata/influxdb/client/v2"
 	"github.com/turtacn/alameda/datahub/pkg/utils"
 	"github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	InfluxClient "github.com/influxdata/influxdb/client/v2"
 	"strconv"
 	"time"
 )

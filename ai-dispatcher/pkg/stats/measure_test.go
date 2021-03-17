@@ -1,8 +1,8 @@
 package stats
 
 import (
-	"testing"
 	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	"testing"
 )
 
 func TestMAPE(t *testing.T) {

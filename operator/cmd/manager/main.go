@@ -31,6 +31,8 @@ import (
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 
+	datahubv1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/turtacn/alameda/operator"
 	autoscalingv1alpha1 "github.com/turtacn/alameda/operator/api/v1alpha1"
 	"github.com/turtacn/alameda/operator/controllers"
@@ -46,8 +48,6 @@ import (
 	"github.com/turtacn/alameda/pkg/provider"
 	k8sutils "github.com/turtacn/alameda/pkg/utils/kubernetes"
 	logUtil "github.com/turtacn/alameda/pkg/utils/log"
-	datahubv1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
-	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 
 	osappsapi "github.com/openshift/api/apps/v1"
 	appsv1 "k8s.io/api/apps/v1"
@@ -343,7 +343,7 @@ func main() {
 		ClusterUID:             clusterUID,
 		DatahubApplicationRepo: datahub_client_application.NewApplicationRepository(datahubConn, clusterUID),
 		DatahubControllerRepo:  datahubControllerRepo,
-		DatahubNamespaceRepo: datahubNamespaceRepo,
+		DatahubNamespaceRepo:   datahubNamespaceRepo,
 		DatahubPodRepo:         datahubPodRepo,
 	}).SetupWithManager(mgr); err != nil {
 		scope.Errorf(err.Error())

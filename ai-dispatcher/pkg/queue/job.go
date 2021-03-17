@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/turtacn/alameda/ai-dispatcher/consts"
 	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
 	"github.com/streadway/amqp"
+	"github.com/turtacn/alameda/ai-dispatcher/consts"
 )
 
 type job struct {

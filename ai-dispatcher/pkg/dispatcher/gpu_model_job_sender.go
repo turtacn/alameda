@@ -6,9 +6,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/turtacn/alameda/ai-dispatcher/consts"
-	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
-	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
 	datahub_v1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
 	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
 	datahub_gpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
@@ -16,6 +13,9 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/ptypes/duration"
 	"github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/turtacn/alameda/ai-dispatcher/consts"
+	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
+	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
 	"google.golang.org/grpc"
 )
 

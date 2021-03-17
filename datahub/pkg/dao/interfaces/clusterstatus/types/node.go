@@ -1,11 +1,11 @@
 package types
 
 import (
+	"github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/turtacn/alameda/datahub/pkg/dao/entities/influxdb/clusterstatus"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	"github.com/turtacn/alameda/internal/pkg/database/common"
 	"github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	"github.com/golang/protobuf/ptypes/timestamp"
 )
 
 // Node provides node measurement operations

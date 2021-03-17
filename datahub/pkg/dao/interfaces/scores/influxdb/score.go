@@ -1,11 +1,11 @@
 package influxdb
 
 import (
+	"github.com/pkg/errors"
 	EntityInfluxScore "github.com/turtacn/alameda/datahub/pkg/dao/entities/influxdb/scores"
 	DaoScore "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/scores/types"
 	RepoInfluxScore "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb/scores"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	"github.com/pkg/errors"
 )
 
 type Score struct {

@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spf13/viper"
 	"github.com/turtacn/alameda/ai-dispatcher/consts"
 	"github.com/turtacn/alameda/pkg/utils"
-	"github.com/spf13/viper"
 )
 
 type ModelMapper struct {

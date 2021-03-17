@@ -4,14 +4,14 @@ import (
 	"strings"
 	"time"
 
+	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	datahub_predictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
+	"github.com/spf13/viper"
 	"github.com/turtacn/alameda/ai-dispatcher/consts"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/stats"
 	stats_errors "github.com/turtacn/alameda/ai-dispatcher/pkg/stats/errors"
-	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
-	datahub_predictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
-	"github.com/spf13/viper"
 )
 
 func DriftEvaluation(unitType string, metricType datahub_common.MetricType, granularity int64,

@@ -7,15 +7,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/turtacn/alameda/ai-dispatcher/consts"
-	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
-	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
-	"github.com/turtacn/alameda/pkg/utils/log"
 	datahub_v1alpha1 "github.com/containers-ai/api/alameda_api/v1alpha1/datahub"
 	datahub_gpu "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/gpu"
 	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	"github.com/spf13/viper"
 	"github.com/streadway/amqp"
+	"github.com/turtacn/alameda/ai-dispatcher/consts"
+	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
+	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
+	"github.com/turtacn/alameda/pkg/utils/log"
 	"google.golang.org/grpc"
 )
 

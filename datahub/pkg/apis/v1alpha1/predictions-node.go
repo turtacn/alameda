@@ -1,11 +1,11 @@
 package v1alpha1
 
 import (
+	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	DaoPrediction "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/predictions"
 	FormatRequest "github.com/turtacn/alameda/datahub/pkg/formatconversion/requests"
 	FormatResponse "github.com/turtacn/alameda/datahub/pkg/formatconversion/responses"
 	AlamedaUtils "github.com/turtacn/alameda/pkg/utils"
-	ApiPredictions "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/predictions"
 	"golang.org/x/net/context"
 	"google.golang.org/genproto/googleapis/rpc/code"
 	"google.golang.org/genproto/googleapis/rpc/status"

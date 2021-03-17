@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/spf13/viper"
 	"github.com/turtacn/alameda/ai-dispatcher/consts"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/metrics"
 	"github.com/turtacn/alameda/ai-dispatcher/pkg/queue"
-	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 )
 

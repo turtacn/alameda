@@ -1,13 +1,13 @@
 package scores
 
 import (
+	InfluxClient "github.com/influxdata/influxdb/client/v2"
+	"github.com/pkg/errors"
 	EntityInfluxScore "github.com/turtacn/alameda/datahub/pkg/dao/entities/influxdb/scores"
 	DaoScoreTypes "github.com/turtacn/alameda/datahub/pkg/dao/interfaces/scores/types"
 	RepoInflux "github.com/turtacn/alameda/datahub/pkg/dao/repositories/influxdb"
 	DBCommon "github.com/turtacn/alameda/internal/pkg/database/common"
 	InternalInflux "github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	InfluxClient "github.com/influxdata/influxdb/client/v2"
-	"github.com/pkg/errors"
 )
 
 // SimulatedSchedulingScoreRepository Repository of simulated_scheduling_score data

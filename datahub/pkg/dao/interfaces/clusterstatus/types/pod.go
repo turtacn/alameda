@@ -1,12 +1,12 @@
 package types
 
 import (
+	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	"github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/turtacn/alameda/datahub/pkg/dao/entities/influxdb/clusterstatus"
 	"github.com/turtacn/alameda/datahub/pkg/kubernetes/metadata"
 	"github.com/turtacn/alameda/internal/pkg/database/common"
 	"github.com/turtacn/alameda/internal/pkg/database/influxdb"
-	ApiCommon "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
-	"github.com/golang/protobuf/ptypes/timestamp"
 	"strings"
 )
 

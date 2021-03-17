@@ -1,8 +1,8 @@
 package weavescope
 
 import (
-	"github.com/turtacn/alameda/internal/pkg/weavescope"
 	ApiWeavescope "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/weavescope"
+	"github.com/turtacn/alameda/internal/pkg/weavescope"
 )
 
 // Container Implements ContainerOperation interface

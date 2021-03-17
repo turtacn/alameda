@@ -1,9 +1,9 @@
 package notifier
 
 import (
+	"github.com/robfig/cron"
 	Metrics "github.com/turtacn/alameda/datahub/pkg/notifier/metrics"
 	"github.com/turtacn/alameda/pkg/utils/log"
-	"github.com/robfig/cron"
 )
 
 var (

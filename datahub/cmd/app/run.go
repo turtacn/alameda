@@ -3,9 +3,9 @@ package app
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/spf13/cobra"
 	"github.com/turtacn/alameda/cmd/app"
 	"github.com/turtacn/alameda/datahub"
-	"github.com/spf13/cobra"
 )
 
 const (

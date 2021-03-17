@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/turtacn/alameda/datahub/pkg/utils"
 	influxdb_client "github.com/influxdata/influxdb/client/v2"
+	"github.com/turtacn/alameda/datahub/pkg/utils"
 )
 
 type simulatedSchedulingScoreField = string

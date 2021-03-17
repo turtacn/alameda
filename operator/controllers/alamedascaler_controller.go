@@ -29,6 +29,8 @@ import (
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/pkg/errors"
 
+	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
+	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 	autoscalingv1alpha1 "github.com/turtacn/alameda/operator/api/v1alpha1"
 	datahub_client "github.com/turtacn/alameda/operator/datahub/client"
 	datahub_application "github.com/turtacn/alameda/operator/datahub/client/application"
@@ -42,8 +44,6 @@ import (
 	datahubutilscontainer "github.com/turtacn/alameda/pkg/utils/datahub/container"
 	datahubutilspod "github.com/turtacn/alameda/pkg/utils/datahub/pod"
 	logUtil "github.com/turtacn/alameda/pkg/utils/log"
-	datahub_common "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/common"
-	datahub_resources "github.com/containers-ai/api/alameda_api/v1alpha1/datahub/resources"
 
 	corev1 "k8s.io/api/core/v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
