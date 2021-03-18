@@ -1,8 +1,13 @@
-#kubectl apply -f example/deployment/kubernetes/0alameda-operator/
-#kubectl apply -f example/deployment/kubernetes/0alameda-datahub/
-#kubectl apply -f example/deployment/kubernetes/0alameda-ai/
-#kubectl apply -f example/deployment/kubernetes/0alameda-evictioner/
-#kubectl apply -f example/deployment/kubernetes/0admission-controller/
-kubectl apply -f example/deployment/kubernetes/0alameda-influxdb/ -n alameda
-kubectl apply  -f example/deployment/kubernetes/0alameda-grafana/ -n alameda
-kubectl create -f example/deployment/kubernetes/0alameda-grafana/dashboards-json-configmap.yaml  -n alameda
+kubectl create ns alameda
+kubectl create -f ./0alameda-operator/ -n alameda
+kubectl create -f ./0alameda-datahub/ -n alameda
+kubectl create -f ./0alameda-ai/ -n alameda 
+kubectl create -f ./0alameda-evictioner/ -n alameda
+#kubectl create -f ./0admission-controller/ -n alameda
+kubectl create -f ./0alameda-influxdb/ -n alameda
+kubectl create -f ./0alameda-grafana/ -n alameda
+kubectl create -f ./0alameda-ai-dispatcher/ -n alameda
+kubectl create -f ./0alameda-executor/ -n alameda
+kubectl create -f ./0alameda-notifier/ -n alameda
+kubectl create -f ./0alameda-rabbitmq/ -n alameda
+kubectl create -f ./0alameda-recommender/ -n alameda
