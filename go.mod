@@ -3,7 +3,7 @@ module github.com/turtacn/alameda
 go 1.14
 
 require (
-	cloud.google.com/go v0.54.0
+	cloud.google.com/go v0.78.0
 	github.com/containers-ai/api v4.2.789+incompatible
 	github.com/ghodss/yaml v1.0.0
 	github.com/golang/protobuf v1.4.3
@@ -29,3 +29,5 @@ require (
 	k8s.io/client-go v0.20.2
 	sigs.k8s.io/controller-runtime v0.8.3
 )
+
+replace cloud.google.com/go v0.54.0 => github.com/googleapis/google-cloud-go v0.79.0
