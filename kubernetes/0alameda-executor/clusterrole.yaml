@@ -5,11 +5,13 @@ metadata:
   name: alameda-executor
 rules:
 - apiGroups:
+  - ""
   - apps
   - extensions
   resources:
   - replicasets
   - deployments
+  - configmaps
   verbs:
   - get
   - list
