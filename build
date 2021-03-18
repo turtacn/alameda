@@ -12,4 +12,4 @@ go mod vendor
 #go mod tidy
 #go mod verify
 
-#go build -mod=mod  -v -o ./data_hub  datahub/cmd/main.go
+#go build -mod=mod  -v -o ./datahub  datahub/cmd/main.go
