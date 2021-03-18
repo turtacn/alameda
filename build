@@ -5,10 +5,11 @@ echo "*******************************************"
 echo "*"`go version`
 echo "*******************************************"
 
+#ALL_PROXY=http://10.226.137.205:19666 git pull
 #git pull
 #go mod init github.com/turtacn/alameda
-#go mod vendor
+go mod vendor
 #go mod tidy
 #go mod verify
 
-go build -mod=mod  -v -o ./data_hub  datahub/cmd/main.go
+#go build -mod=mod  -v -o ./data_hub  datahub/cmd/main.go

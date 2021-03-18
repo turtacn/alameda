@@ -240,7 +240,7 @@ func (c *KeycodeMgt) GetStatus() int {
 }
 
 // NOTE: DO GET KeycodeMutex lock before using this function
-func (c *KeycodeMgt) refrseh(force bool) error {
+func (c *KeycodeMgt) refresh(force bool) error {
 	tm := time.Now()
 	tmUnix := tm.Unix()
 	refreshed := false

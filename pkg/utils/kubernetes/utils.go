@@ -162,7 +162,7 @@ func GetPodByNamespaceNameWithConfig(namespace, name string, config rest.Config)
 		return pod, errors.Errorf("get pod by namespace and name failed, create k8s api client failed: %s", err.Error())
 	}
 
-	p, err := k8sClient.CoreV1().Pods(namespace).Get(name, Metav1.GetOptions{})
+	p, err := k8sClient.CoreV1().Pods(namespace).Get(context.Background(),name, Metav1.GetOptions{})
 	if err != nil {
 		return pod, errors.Errorf("get pod by namespace and name failed, %s", err.Error())
 	}
