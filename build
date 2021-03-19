@@ -14,4 +14,4 @@ echo "*******************************************"
 
 go build -mod=mod  -v -o ./datahub/docker/datahub  datahub/cmd/main.go
 go build -mod=mod  -v -o ./ai-dispatcher/docker/ai-dispatcher ai-dispatcher/cmd/main.go
-#go build -mod=mod  -v -o ./operator/docker/manager operator/cmd/manager/main.go
+go build -mod=mod  -v -o ./operator/docker/manager operator/cmd/manager/main.go
