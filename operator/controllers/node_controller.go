@@ -57,7 +57,7 @@ type NodeReconciler struct {
 // a Deployment as an example
 // +kubebuilder:rbac:groups=core,resources=nodes,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=core,resources=nodes/status,verbs=get;update;patch
-func (r *NodeReconciler) Reconcile(request reconcile.Request) (reconcile.Result, error) {
+func (r *NodeReconciler) Reconcile(ctx context.Context, request reconcile.Request) (reconcile.Result, error) {
 	requeueInterval := 3 * time.Second
 	instance := &corev1.Node{}
 	err := r.Get(context.TODO(), request.NamespacedName, instance)

@@ -44,7 +44,7 @@ type StatefulSetReconciler struct {
 	ClusterUID string
 }
 
-func (r *StatefulSetReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
+func (r *StatefulSetReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	requeueDuration := 1 * time.Second
 	getResource := utilsresource.NewGetResource(r)
 	updateResource := utilsresource.NewUpdateResource(r)

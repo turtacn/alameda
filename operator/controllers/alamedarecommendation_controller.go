@@ -52,7 +52,7 @@ type AlamedaRecommendationReconciler struct {
 
 // Reconcile reads that state of the cluster for a AlamedaRecommendation object and makes changes based on the state read
 // and what is in the AlamedaRecommendation.Spec
-func (r *AlamedaRecommendationReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
+func (r *AlamedaRecommendationReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	requeueAfter := 5 * time.Second
 	if !alamedarecommendationFirstSynced {
 		time.Sleep(5 * time.Second)

@@ -43,7 +43,7 @@ type NamespaceReconciler struct {
 	DatahubNamespaceRepo *datahub_namespace.NamespaceRepository
 }
 
-func (r *NamespaceReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
+func (r *NamespaceReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	if !namespaceFirstSynced {
 		time.Sleep(5 * time.Second)
 	}

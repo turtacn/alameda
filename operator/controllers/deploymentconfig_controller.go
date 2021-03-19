@@ -47,7 +47,7 @@ type DeploymentConfigReconciler struct {
 	ClusterUID string
 }
 
-func (r *DeploymentConfigReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
+func (r *DeploymentConfigReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	requeueDuration := 1 * time.Second
 	if !deploymentConfigFirstSynced {
 		time.Sleep(5 * time.Second)

@@ -80,7 +80,7 @@ type AlamedaScalerReconciler struct {
 
 // Reconcile reads that state of the cluster for a AlamedaScaler object and makes changes based on the state read
 // and what is in the AlamedaScaler .Spec
-func (r *AlamedaScalerReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
+func (r *AlamedaScalerReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	if !alamedascalerFirstSynced {
 		time.Sleep(5 * time.Second)
 	}
