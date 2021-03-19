@@ -4,7 +4,7 @@ import (
 	"context"
 
 	autuscaling "github.com/turtacn/alameda/operator/api/v1alpha1"
-	"k8s.io/apimachinery/pkg/runtime"
+	//"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
@@ -27,12 +27,12 @@ func (updateResource *UpdateResource) UpdateAlamedaScaler(alamedaScaler *autusca
 }
 
 // UpdateResource updates resource
-func (updateResource *UpdateResource) UpdateResource(resource runtime.Object) error {
+func (updateResource *UpdateResource) UpdateResource(resource client.Object) error {
 	err := updateResource.updateResource(resource)
 	return err
 }
 
-func (updateResource *UpdateResource) updateResource(resource runtime.Object) error {
+func (updateResource *UpdateResource) updateResource(resource client.Object) error {
 	if err := updateResource.Update(context.TODO(),
 		resource); err != nil {
 		scope.Debug(err.Error())

@@ -11,7 +11,7 @@ import (
 	"github.com/pkg/errors"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/runtime"
+	//"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
@@ -292,7 +292,8 @@ func (listResources *ListResources) ListAlamedaRecommendationOwnedByAlamedaScale
 	return alamedaRecommendationList.Items, nil
 }
 
-func (listResources *ListResources) listAllResources(resourceList runtime.Object) error {
+//func (listResources *ListResources) listAllResources(resourceList runtime.Object) error {
+func (listResources *ListResources) listAllResources(resourceList client.ObjectList) error {
 	if err := listResources.client.List(context.TODO(),
 		resourceList); err != nil {
 		scope.Error(err.Error())
@@ -301,7 +302,7 @@ func (listResources *ListResources) listAllResources(resourceList runtime.Object
 	return nil
 }
 
-func (listResources *ListResources) listResourcesByNamespace(resourceList runtime.Object, namespace string) error {
+func (listResources *ListResources) listResourcesByNamespace(resourceList client.ObjectList, namespace string) error {
 	if err := listResources.client.List(context.TODO(), resourceList,
 		&client.ListOptions{
 			Namespace: namespace,
@@ -312,7 +313,7 @@ func (listResources *ListResources) listResourcesByNamespace(resourceList runtim
 	return nil
 }
 
-func (listResources *ListResources) listResourcesByLabels(resourceList runtime.Object, lbls map[string]string) error {
+func (listResources *ListResources) listResourcesByLabels(resourceList client.ObjectList, lbls map[string]string) error {
 	if err := listResources.client.List(context.TODO(),
 		resourceList,
 		client.MatchingLabels(lbls)); err != nil {
@@ -322,7 +323,7 @@ func (listResources *ListResources) listResourcesByLabels(resourceList runtime.O
 	return nil
 }
 
-func (listResources *ListResources) listResourcesByNamespaceLabels(resourceList runtime.Object, namespace string, lbls map[string]string) error {
+func (listResources *ListResources) listResourcesByNamespaceLabels(resourceList client.ObjectList, namespace string, lbls map[string]string) error {
 	if err := listResources.client.List(context.TODO(),
 		resourceList, client.InNamespace(namespace),
 		client.MatchingLabels(lbls)); err != nil {
